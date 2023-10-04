@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="images\logo.jpg" type="image/icon type">
+<title>DRM - Password Reset</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles\forgot-psw.css">
+</head>
+
+<body>
+    <script src="script\forgot-psw.js"></script>
+
+    <div class="navbar">
+        <div class="logo">
+            <img class="logo" src="images\logo.jpg" alt="Page Logo" />
+        </div>
+        <div class="navbar-links">
+            <a class="first-btn" href="home.html"><button class="btn">Home</button></a>
+            <a href="team.html"><button class="btn">Team</button></a>
+            <a href="about.html"><button class="btn">About</button></a>
+            <a href="contact.html"><button class="btn">Contact</button></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- <h2>Welcome to DRM!</h2> -->
+        <div class="loginBox">
+            <form action="/action_page.php" id="login-form" method="post">
+                <h1>Password Reset</h1>
+                <div class="row">
+                    <div class="label">
+                      <label for="security-qns">Security Question :</label>
+                    </div>
+                    <div class="input">
+                      <select id="qns" name="qns">
+                        <option value="" disabled selected>Select your question</option>
+                        <option value="bornCity">What's the name of the city where you were born ?</option>
+                        <option value="nickName">What was your childhood nickname ?</option>
+                        <option value="firstSchool">What's the name of the first school you attended ?</option>
+                        <option value="fev-Vecation">Where did you go on your favorite vacation as a child?</option>
+                        <option value="fevSub">What was your favorite subject in high school?</option>
+                        <option value="sibling-mid-name">What is your older/younger sibling's middle name?</option>
+                        <option value="fevMovie">What's your favorite movie?</option>
+                      </select>
+                    </div>
+                  </div>
+                <label for="userid"><b></b>
+                    Answer :</label><br>
+                <input id="userid" placeholder="Enter your answer here..." required autofocus autocomplete="off"><br><br>
+                <label for="password"><b></b>Enter New Password :</label><br>
+                <input type="password" id="password" placeholder="Enter new password here... "><br><br>
+                <label for="password"><b></b>Re-Enter New Password :</label><br>
+                <input type="password" id="password" placeholder="Re-Enter new password here... "><br><br>
+                <a href=".html">
+                    <button name="loginSubmit" type="button" id="loginSubmit" onclick="">Reset</button>
+                </a>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

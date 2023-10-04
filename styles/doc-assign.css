@@ -1,0 +1,244 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: auto;
+  background: white;
+  margin: 0;
+}
+
+/* The Navigation Bar Styles*/
+.navbar {
+  display: inline-block;
+  grid-template-columns: auto auto;
+  overflow: hidden;
+  background-color: rgb(5, 67, 105);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+/* Navigation Bar Left Part Styles*/
+.navbar-left {
+  margin-left: 20px;
+  margin-top: 45px;
+}
+
+/* Navbar Hamburger Icon Styles */
+.navbar .hamburger {
+  float: left;
+  display: flex;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  margin: 38px 15px 50px 35px;
+}
+
+/* Navbar Hamburger Icon Hover Styles */
+.navbar .hamburger:hover {
+  color: #a2ecff;
+}
+
+/* Navbar Heading Styles */
+.navbar h1 {
+  color: white;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+  margin: 30px 15px 0px 35px;
+}
+
+/* Logout Button Styles */
+.navbar a button {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: bisque;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 25px;
+  margin-left: 54.4%;
+  margin-block-end: auto;
+  position:fixed;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Logout Button background on mouse-over */
+.navbar a button:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main Section Styles */
+.main .section {
+  width: calc(100% - 225px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+}
+
+/* Main Body Container Styles */
+.main .section .main-body-container {
+  margin: 150px 30px 30px 30px;
+  background: rgb(241, 241, 241);
+  padding: 20px;
+  line-height: 28px;
+}
+
+body.active .main .section {
+  margin-left: 0;
+  width: 100%;
+}
+
+body.active .main .sidebar {
+  left: -235px;
+}
+
+/* Sidebar Styles */
+.main .sidebar {
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 232px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.main .sidebar .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.main .sidebar .profile img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.main .sidebar .profile h3 {
+  font-weight: medium;
+  color: white;
+  margin: 10px 0 5px;
+}
+
+.main .sidebar .profile p {
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.main .sidebar ul li a {
+  display: block;
+  padding: 15px 25px;
+  border-bottom: 1px solid rgb(155, 155, 155);
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.main .sidebar ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.main .sidebar ul li a:hover,
+.main .sidebar ul li a.active {
+  color: black;
+  background: rgb(207, 237, 255);
+  border-right: 2px solid rgb(5, 68, 104);
+}
+
+.main .sidebar ul li a:hover .icon,
+.main .sidebar ul li a.active .icon {
+  color: black;
+}
+
+.main .sidebar ul li a:hover:before,
+.main .sidebar ul li a.active:before {
+  display: block;
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.table th {
+  background-color: cornflowerblue;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table td.assign-btn {
+  padding-right: 0px;
+  padding-left: 3.2%;
+}
+
+.table td a button {
+  font-size: medium;
+  color: black;
+  background-color: gainsboro;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.table td a button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.table .assign-btn a button{
+  background-color: lightgreen;
+}
+
+/* Pagination Styles */
+.pagination {
+  padding-left: 38%;
+  padding-top: 20px;
+}
+
+.pagination a {
+  color: black;
+  font-size: 17px;
+  padding: 8px 12px;
+}
+
+.pagination a:hover {
+  font-size: 17px;
+  padding: 8px 12px;
+  background-color: powderblue;
+}
+
+body > div > div.section > div.main-body-container > div > a:nth-child(2) {
+  background-color: skyblue;
+}
+
+body > div > div.section > div.main-body-container > div > a:nth-child(2):hover {
+  background-color: gainsboro;
+}
+

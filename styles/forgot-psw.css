@@ -1,0 +1,170 @@
+/* Overall Body Style */
+body {
+  margin: 0;
+}
+
+/* The navigation bar */
+.navbar {
+  /* overflow: hidden; */
+  /* display: inline-flex; */
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 12%;
+  position: fixed;
+  transition: 0.2s;
+  background-color: rgb(5, 67, 105);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+/* Page Logo */
+.logo {
+  height: 50px;
+  width: 120px;
+  padding: 10px 0px 0px 25px;
+
+}
+
+/* Nav Bar Buttons (Links inside the navbar) */
+.navbar-links {
+  margin: 0px 14% 0px 22%;
+}
+
+.navbar a .btn {
+  /* float: left; */
+  border: none;
+  color: wheat;
+  background-color: inherit;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  margin: 24px 40px 0px 20px;
+}
+
+.navbar a .btn:hover {
+  color: #000;
+  background: gainsboro;
+}
+
+.main h2 {
+  text-align: center;
+  padding: 5% 10px 0px 0px;
+  font: 25px sans-serif;
+  font-weight: 500;
+}
+
+/* Login Box Styles */
+.loginBox {
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 30%;
+  margin-top: 1%;
+}
+
+/* Login Form Styles */
+form {
+  float: left;
+  padding-left: 50px;
+}
+
+/* Form Heading Styles */
+form h1 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text], select {
+  width: 428px;
+  /* font-weight: 600; */
+  border: 1px solid #909090;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px;
+}
+
+input[type=text], select:hover {
+  width: 428px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px;
+}
+
+input[type=text], option {
+  width: 428px;
+  border: 1px solid #909090;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 10px;
+}
+
+/* Form Label Styles */
+form label {
+  color: black;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Form Input Fields */
+form input {
+  padding: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 420px;
+  height: 32px;
+  border: 1px solid #909090 !important;
+  border-radius: 2.5px;
+  margin: 10px;
+}
+
+form input::placeholder {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  width: 420px;
+  height: 32px;
+  margin: 10px;
+}
+
+/* Login Button in Form - Styles */
+.loginBox button {
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #008cba;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  margin: 15px 0px 15px 40%;
+  padding: 8px 25px;
+}
+
+/* Login Button Hover Styles */
+.loginBox button:hover {
+  background-color: skyblue;
+  color: black;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25), 0 5px 10px 0 rgba(0, 0, 0, 0.20);
+}
+
+.forgot-psw a {
+  color: red;
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  margin: 0px 0px 0px 155px;
+}
+
+/* Main content */
+.main {
+  padding-left: 5%;
+  margin-top: 120px;
+}
