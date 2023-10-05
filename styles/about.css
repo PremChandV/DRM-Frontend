@@ -85,4 +85,5 @@ h1 {
 .main p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
 }
