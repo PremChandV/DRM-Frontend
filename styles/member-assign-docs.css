@@ -210,14 +210,19 @@ th, td {
   background-color: #f9f9f9;
 }
 
+.table td.dwn-btn {
+  padding-right: 0px;
+  padding-left: 1.8%;
+}
+
 .table td.assign-btn {
   padding-right: 0px;
-  padding-left: 4.5%;
+  padding-left: 3%;
 }
 
 .table td.del-btn {
   padding-right: 0px;
-  padding-left: 1.8%;
+  padding-left: 1.2%;
 }
 
 .table td a button {
@@ -235,6 +240,10 @@ th, td {
 .table td a button:hover {
   background: whitesmoke;
   color: black;
+}
+
+.table .dwn-btn a button {
+  background-color: powderblue;
 }
 
 .table .assign-btn a button {
