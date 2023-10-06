@@ -134,23 +134,50 @@ form input::placeholder {
   margin: 10px;
 }
 
-/* Login Button in Form - Styles */
+/* Back Button - Styles */
 .loginBox button {
+  display: inline-block;
+  position: relative;
+  margin: 15px 0px 15px 20%;
+}
+
+#cancel {
   cursor: pointer;
   font-size: large;
   font-weight: bold;
   text-align: center;
-  color: white;
-  background-color: #008cba;
+  color: gray;
+  background-color: skyblue;
   border: 1px solid black;
   border-radius: 2.5px;
-  margin: 15px 0px 15px 40%;
+  /* margin: 15px 0px 15px 20%; */
   padding: 8px 25px;
 }
 
-/* Login Button Hover Styles */
-.loginBox button:hover {
-  background-color: skyblue;
+/* Back Button Hover Styles */
+#cancel:hover {
+  background-color: powderblue;
+  color: black;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25), 0 5px 10px 0 rgba(0, 0, 0, 0.20);
+}
+
+/* Reset Button in Form - Styles */
+#loginSubmit {
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: gainsboro;
+  background-color: #008cba;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  /* margin: 15px 0px 15px 60%; */
+  padding: 8px 25px;
+}
+
+/* Reset Button Hover Styles */
+#loginSubmit:hover {
+  background-color: powderblue;
   color: black;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25), 0 5px 10px 0 rgba(0, 0, 0, 0.20);
 }

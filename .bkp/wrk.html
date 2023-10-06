@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Dropdown Button to Select Option</title>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  margin-top: 5px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  margin-left: 5px;
+}
+
+</style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdown-toggle" id="dropdownMenuButton">
+          <span>Select an option</span>
+          <i class="arrow-down"></i>
+        </button>
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li class="dropdown-item">Option 1</li>
+          <li class="dropdown-item">Option 2</li>
+          <li class="dropdown-item">Option 3</li>
+          <li class="dropdown-item">Option 4</li>
+        </ul>
+      </div>
+
+      <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input type="submit">
+      </form>
+      
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const dropdownMenuButton = document.getElementById("dropdownMenuButton");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  dropdownMenuButton.addEventListener("click", function() {
+    dropdownMenu.classList.toggle("show");
+  });
+
+  dropdownMenu.addEventListener("click", function(e) {
+    const selectedOption = e.target.textContent;
+    dropdownMenuButton.querySelector("span").textContent = selectedOption;
+    dropdownMenu.classList.remove("show");
+  });
+
+  document.addEventListener("click", function(e) {
+    if (!dropdownMenu.contains(e.target) && e.target !== dropdownMenuButton) {
+      dropdownMenu.classList.remove("show");
+    }
+  });
+});
+
+</script>
+</body>
+</html>
