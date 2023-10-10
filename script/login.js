@@ -3,12 +3,12 @@ function loginValidate() {
     var password = document.getElementById("password").value;
     if (userid == "admin" && password == "admin@123") {
         window.location.href = "dashboard.html"; // Redirecting to dashboard page.
-        alert("Login Successfully!   :-)");
+        // alert("Login Successfully!   :-)");
         return false;
     } 
     if (userid == "member" && password == "member@123") {
         window.location.href = "member-dashboard.html"; // Redirecting to member dashboard page.
-        alert("Member Login Successfully!   :-)");
+        // alert("Member Login Successfully!   :-)");
         return false;
     }
     else {

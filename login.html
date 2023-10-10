@@ -18,15 +18,15 @@
             <img class="logo" src="images\logo.jpg" alt="Page Logo" />
         </div>
         <div class="navbar-links">
-            <a class="first-btn" href="home.html"><button class="btn">Home</button></a>
-            <a href="team.html"><button class="btn">Team</button></a>
-            <a href="about.html"><button class="btn">About</button></a>
-            <a href="contact.html"><button class="btn">Contact</button></a>
+            <a class="btn" href="home.html">Home</a>
+            <a class="btn" href="team.html">Team</a>
+            <a class="btn" href="about.html">About</a>
+            <a class="btn" href="contact.html">Contact</a>
         </div>
     </div>
 
     <div class="main">
-        <h2>Welcome to DRM!</h2>
+        <h2>Welcome to DRM</h2>
         <div class="loginBox">
             <form action="/action_page.php" id="login-form" method="post">
                 <h1>Login</h1>
@@ -35,9 +35,9 @@
                 <input id="userid" placeholder="Enter user id here..." required autofocus autocomplete="off"><br><br>
                 <label for="password"><b></b>Password:</label><br>
                 <input type="password" id="password" placeholder="Enter password here... "><br><br>
-                <a href="dashboard.html">
-                    <button name="loginSubmit" type="button" id="loginSubmit" onclick="loginValidate()">Login</button>
-                </a>
+                <div class="login-submit">
+                    <a type="submit" id="loginSubmit" onclick="loginValidate()">Login</a>
+                </div>
                 <div class="forgot-psw">
                     <a href="forgot-psw.html">Forgot Password</a>
                 </div>

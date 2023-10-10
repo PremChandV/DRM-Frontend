@@ -30,21 +30,24 @@ body {
     margin: 0px 14% 0px 22%;
 }
 
-.navbar a .btn {
+.btn {
     border: none;
     color: wheat;
     background-color: inherit;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
     cursor: pointer;
     display: inline-block;
     margin: 24px 40px 0px 20px;
 }
 
-.navbar a .btn:hover {
+.btn:hover {
     color: #000;
     background: gainsboro;
+    text-decoration: none;
 }
 
 /* Login Button Styles */

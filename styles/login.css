@@ -30,7 +30,7 @@ body {
   margin: 0px 14% 0px 22%;
 }
 
-.navbar a .btn {
+.btn {
   /* float: left; */
   border: none;
   color: wheat;
@@ -38,12 +38,14 @@ body {
   padding: 10px 25px;
   font-size: 20px;
   font-weight: 500;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   display: inline-block;
   margin: 24px 40px 0px 20px;
 }
 
-.navbar a .btn:hover {
+.btn:hover {
   color: #000;
   background: gainsboro;
 }
@@ -58,7 +60,7 @@ body {
 /* Login Box Styles */
 .loginBox {
   width: 500px;
-  height: 350px;
+  height: 400px;
   position: absolute;
   border: 1px solid black;
   background-color: #ddd;
@@ -102,32 +104,40 @@ form input {
 }
 
 /* Login Button in Form - Styles */
-.loginBox button {
+.login-submit {
   cursor: pointer;
   font-size: large;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   background-color: #008cba;
   border: 1px solid black;
   border-radius: 2.5px;
-  margin: 15px 0px 15px 40%;
-  padding: 8px 25px;
+  margin: 20px 40% 0px 38%;
+  padding: 10px 80px 10px 35px;
 }
 
 /* Login Button Hover Styles */
-.loginBox button:hover {
+.login-submit:hover {
   background-color: skyblue;
   color: black;
+  text-decoration: none;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25), 0 5px 10px 0 rgba(0, 0, 0, 0.20);
+}
+
+.forgot-psw {
+  margin: 20px 0px 0px 155px;
 }
 
 .forgot-psw a {
   color: red;
   font-size: 18px;
+  font-weight: 500;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
-  margin: 0px 0px 0px 155px;
+  /* margin: 20px 0px 0px 155px; */
 }
 
 /* Main content */
