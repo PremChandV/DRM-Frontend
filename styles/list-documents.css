@@ -176,7 +176,7 @@ body.active .main .sidebar {
 }
 
 /* "Add Document" Button Styles */
-.main-body-container a button {
+body > div > div.section > div.main-body-container > div.add-btn > a {
   float:initial;
   font-size: medium;
   color: black;
@@ -185,10 +185,13 @@ body.active .main .sidebar {
   border-radius: 2px;
   cursor: pointer;
   padding: 5px 10px;
+}
+
+.add-btn {
   margin: 0px 0px 20px 45%;
 }
 
-.main-body-container a button:hover {
+body > div > div.section > div.main-body-container > div.add-btn > a:hover {
   background: gainsboro;
   color: black;
 }
