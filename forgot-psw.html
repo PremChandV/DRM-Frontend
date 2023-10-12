@@ -18,10 +18,10 @@
             <img class="logo" src="images\logo.jpg" alt="Page Logo" />
         </div>
         <div class="navbar-links">
-            <a class="first-btn" href="home.html"><button class="btn">Home</button></a>
-            <a href="team.html"><button class="btn">Team</button></a>
-            <a href="about.html"><button class="btn">About</button></a>
-            <a href="contact.html"><button class="btn">Contact</button></a>
+            <a class="btn" href="home.html">Home</a>
+            <a class="btn" href="team.html">Team</a>
+            <a class="btn" href="about.html">About</a>
+            <a class="btn" href="contact.html">Contact</a>
         </div>
     </div>
 
