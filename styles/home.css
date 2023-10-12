@@ -30,7 +30,7 @@ body {
     margin: 0px 14% 0px 22%;
 }
 
-.btn {
+.navbar-links a {
     border: none;
     color: wheat;
     background-color: inherit;
@@ -44,7 +44,7 @@ body {
     margin: 24px 40px 0px 20px;
 }
 
-.btn:hover {
+.navbar-links a:hover {
     color: #000;
     background: gainsboro;
     text-decoration: none;
